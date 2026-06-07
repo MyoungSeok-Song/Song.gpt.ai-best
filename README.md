@@ -1,5 +1,8 @@
-# Song.gpt.ai-best
 # GPT-based Prediction Program
+
+## ver.Kor
+
+# GPT 기반 예측 프로그램
 
 ## 소개
 
@@ -40,3 +43,49 @@ MIT License
 
 이 프로젝트는 MIT License를 따릅니다.  
 자유롭게 사용, 수정, 배포할 수 있습니다.
+
+---
+
+## ver.Eng
+
+# GPT-based Prediction Program
+
+## Introduction
+
+This project is a prediction program that uses GPT to analyze user-provided data and generate prediction results.  
+It aims to identify meaningful patterns from the input data and provide natural language explanations so that users can easily understand the prediction results.
+
+## Key Features
+
+- GPT-based data analysis and prediction generation
+- Natural language explanation of input data and prediction results
+- Easy-to-understand result output
+- Support for various prediction scenarios using different types of input data
+- Simple execution process for easy use
+
+## How to Use
+
+1. Download the project
+
+bash git clone https://github.com/username/gpt-based-prediction-program.git 
+
+2. Move to the project folder
+
+bash cd gpt-based-prediction-program 
+
+3. Install the required libraries
+
+bash pip install -r requirements.txt 
+
+4. Run the program
+
+bash python main.py 
+
+5. Enter the required input data and check the prediction results.
+
+## License
+
+MIT License
+
+This project is licensed under the MIT License.  
+You are free to use, modify, and distribute this project.
