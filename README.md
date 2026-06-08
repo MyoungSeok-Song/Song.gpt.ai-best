@@ -21,21 +21,47 @@
 
 1. 프로젝트 다운로드
 
-bash git clone https://github.com/username/gpt-based-prediction-program.git 
+```bash
+git clone https://github.com/MyoungSeok-Song/Song.gpt.ai-best.git
+```
 
 2. 프로젝트 폴더로 이동
 
-bash cd gpt-based-prediction-program 
+```bash
+cd Song.gpt.ai-best
+```
 
 3. 필요한 라이브러리 설치
 
-bash pip install -r requirements.txt 
+```bash
+python3 -m pip install -r requirements.txt
+```
 
-4. 프로그램 실행
+4. OpenAI API 키 설정
 
-bash python main.py 
+```bash
+export OPENAI_API_KEY="your_openai_api_key_here"
+```
 
-5. 입력값을 작성한 후 예측 결과를 확인합니다.
+5. 프로그램 실행
+
+```bash
+python3 main.py --scenario sales --data "지난 4주 매출: 120, 135, 128, 160. 광고비는 3주차부터 증가."
+```
+
+파일 입력도 사용할 수 있습니다.
+
+```bash
+python3 main.py --scenario study --file sample.txt
+```
+
+JSON 그대로 출력하려면 `--json` 옵션을 추가합니다.
+
+```bash
+python3 main.py --scenario finance --data "..." --json
+```
+
+기본 모델은 `gpt-5.5`이며, 필요하면 `OPENAI_MODEL` 환경변수나 `--model` 옵션으로 바꿀 수 있습니다.
 
 ## 라이선스
 
@@ -67,21 +93,47 @@ It aims to identify meaningful patterns from the input data and provide natural 
 
 1. Download the project
 
-bash git clone https://github.com/username/gpt-based-prediction-program.git 
+```bash
+git clone https://github.com/MyoungSeok-Song/Song.gpt.ai-best.git
+```
 
 2. Move to the project folder
 
-bash cd gpt-based-prediction-program 
+```bash
+cd Song.gpt.ai-best
+```
 
 3. Install the required libraries
 
-bash pip install -r requirements.txt 
+```bash
+python3 -m pip install -r requirements.txt
+```
 
-4. Run the program
+4. Set your OpenAI API key
 
-bash python main.py 
+```bash
+export OPENAI_API_KEY="your_openai_api_key_here"
+```
 
-5. Enter the required input data and check the prediction results.
+5. Run the program
+
+```bash
+python3 main.py --scenario sales --data "Last 4 weeks of revenue: 120, 135, 128, 160. Ad spend increased from week 3."
+```
+
+You can also read input from a file.
+
+```bash
+python3 main.py --scenario study --file sample.txt
+```
+
+Use `--json` to print the raw JSON result.
+
+```bash
+python3 main.py --scenario finance --data "..." --json
+```
+
+The default model is `gpt-5.5`. You can change it with the `OPENAI_MODEL` environment variable or the `--model` option.
 
 ## License
 
